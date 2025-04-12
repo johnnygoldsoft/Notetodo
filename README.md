@@ -89,15 +89,6 @@ lib/
 
 ---
 
-## 🖼️ **Captures d'écran**
-
-| Vue des tâches | Vue des notes | Notification |
-| -------------- | ------------- | ------------ |
-|                |               |              |
-
-*(Ajoutez des captures d'écran de votre application ici.)*
-
----
 
 ## ✨ **Fonctionnalités futures**
 
@@ -143,6 +134,6 @@ Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plu
 
 ### 🛠️ **Développeur**
 
-[Votre Nom](https://github.com/votre-utilisateur)\
-📨 **Contact :** [votre-email@example.com](mailto\:votre-email@example.com)
+[JohnnyGolSoft](https://github.com/johnnygoldsoft)\
+📨 **Contact :** [johnnygoldsoft@gmail.com](mailto\:johnnygoldsoft@gmail.com)
 
