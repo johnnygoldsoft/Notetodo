@@ -35,7 +35,7 @@ void main() async {
   await NotificationService().init();
 
   // Lancer l'application
-  runApp(DevicePreview (builder: (BuildContext context) =>  MyApp()));
+  runApp(const  MyApp());
 
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 }
