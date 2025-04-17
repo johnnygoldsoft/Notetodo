@@ -40,8 +40,15 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
               child: IconButton(
                 icon: const Icon(Icons.save),
                 onPressed: () async {
-                  final title = _titleController.text.trim();
+                  String title = _titleController.text.trim();
                   final content = _contentController.text.trim();
+
+                  if (title.isEmpty && content.isNotEmpty) {
+                    final premierMotDuContenu = content.split(' ').firstWhere((mot) => mot.isNotEmpty, orElse: () => '');
+                    if (premierMotDuContenu.isNotEmpty) {
+                      title = premierMotDuContenu;
+                    }
+                  }
 
                   if (title.isNotEmpty && content.isNotEmpty) {
                     final note = Note(

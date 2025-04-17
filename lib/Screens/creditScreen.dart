@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Creditscreen extends StatefulWidget {
@@ -29,17 +30,23 @@ class _CreditscreenState extends State<Creditscreen> {
         title: Text("Credit"),
       ),
       body: Center(
-        child: Column(
-          children: [
-            Text("Create with ❤ by JohnnyGoldSoft ..."),
+        child: Container(
+          height: MediaQuery.of(context).size.height,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
 
-            SizedBox(height: 10.0),
 
-            ElevatedButton(
-              onPressed: () => launchUrlSiteBrowser( url: 'https://github.com/johnnygoldsoft'),
-              child: Text('Github ...'),
-            ),
-          ],
+            children: [
+              Text("Create with ❤ by JohnnyGoldSoft ..."),
+
+              SizedBox(height: 50.0.h),
+
+              ElevatedButton(
+                onPressed: () => launchUrlSiteBrowser( url: 'https://github.com/johnnygoldsoft'),
+                child: Text('Github ...'),
+              ),
+            ],
+          ),
         ),
       ),
     );
